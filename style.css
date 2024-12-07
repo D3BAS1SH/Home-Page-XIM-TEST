@@ -159,11 +159,11 @@ html{
     background-color: #f9f9f9; 
 }
 .horizontal-scroll img {
-  height: 450px; /* Adjust height as needed */
-  flex-shrink: 0; /* Prevent images from shrinking */
-  object-fit: cover; /* Ensure images fit nicely */
-  border-radius: 8px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 8px #0000001a; /* Optional: Shadow effect */
+  height: 450px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0000001a;
 }
 
 /*Events-section*/
@@ -181,6 +181,7 @@ html{
     text-transform: uppercase;
     text-shadow: 5px 5px 5px #e7e7e7;
     color: #011147;
+    margin-bottom: 1.5rem;
 }
 .events-section ul{
     min-width: 100%;
@@ -226,4 +227,46 @@ html{
 .events-section ul li:last-child div{
     overflow-x: auto;
     width: 60%;
+}
+
+/*Highlight Event Section*/
+.highlights-section{
+    min-height: 90vh;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+.highlights-section h2{
+    font-family: "Jost";
+    font-weight: 500;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px #e7e7e7;
+    color: #011147;
+    margin-bottom: 1.5rem;
+}
+.highlights-section p{
+    margin-bottom: 1.5rem;
+    font-family: "Archivo";
+    font-size: 150%;
+}
+.gallery-container{
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    max-width: 100%;
+}
+.gallery-container img{
+    height: 450px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
 }
