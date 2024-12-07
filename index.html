@@ -16,6 +16,7 @@
         <div class="logo">
             <!-- Add your logo image here -->
             <img src="./IMAGE_S_/Logo.png" alt="ACM Logo" title="ACM Student Chapter Logo">
+            <button class="burger" onclick="toggleMenu()">☰</button>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -88,10 +89,10 @@
         <p>Follow us on our social media platforms for updates:</p>
         <div class="social-links">
             <a href="https://www.instagram.com/acm_xim/" target="_blank">
-                <img src="images/instagram-icon.png" alt="Instagram" title="Follow us on Instagram">
+                <img src="./IMAGE_S_/instagram-icon/2227.jpg" alt="Instagram" title="Follow us on Instagram">
             </a>
             <a href="https://www.linkedin.com/company/xim-acm/mycompany/" target="_blank">
-                <img src="images/linkedin-icon.png" alt="LinkedIn" title="Connect with us on LinkedIn">
+                <img src="./IMAGE_S_/LinkedIn-Logos/In/Digital/Blue/1x/In-Blue-96.png" alt="LinkedIn" title="Connect with us on LinkedIn">
             </a>
         </div>
     </section>
@@ -104,6 +105,12 @@
     </footer>
 
 </body>
+<script>
+    function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+    }
+</script>
 </html>
 
 
